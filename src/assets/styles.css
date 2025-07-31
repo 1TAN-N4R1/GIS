@@ -1,0 +1,16 @@
+/* // src/assets/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* fallback */
+#map { height: 100vh; width: 100vw; }
+
+body, html { margin: 0; height: 100%; }
+.burger { position: absolute; top: 10px; left: 10px; z-index: 1000; background: white; border: none; padding: 8px; cursor: pointer; }
+.menu { position: absolute; top: 50px; left: 10px; z-index: 1000; background: white; border: 1px solid #ccc; padding: 10px; display: none; max-height: 80vh; overflow-y: auto; }
+.menu.open { display: block; }
+.menu-section { margin-bottom: 1rem; }
+.menu-section h4 { margin: 0 0 4px; font-size: 1rem; }
+.menu-section ul { list-style: none; margin: 0; padding: 0; }
+.menu-section li { margin-bottom: 6px; cursor: pointer; }
+.menu-section li:hover { text-decoration: underline; }
